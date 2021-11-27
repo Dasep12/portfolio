@@ -1,3 +1,14 @@
+<?php
+$con = mysqli_connect("localhost", "root", "", "project");
+if (!$con) {
+  echo "gagal koneksi";
+}
+
+$qry = mysqli_query($con, "select * from pro");
+$count = mysqli_num_rows($qry);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,14 +84,10 @@
         </div>
 
         <div class="box">
-          <span>6</span>
+          <span><?= $count ?></span>
           <h3>projects completed</h3>
         </div>
 
-        <div class="box">
-          <span>8+</span>
-          <h3>happy clients</h3>
-        </div>
       </div>
       <!-- end counter -->
     </div>
@@ -149,18 +156,31 @@
     <div class="box-container">
       <div class="box">
         <img src="img/apotkkl.jpg" alt="" />
+        <<<<<<< HEAD </div>
+          <div class="box">
+            <img src="img/sewakamera.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="img/simas.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="img/e-perpus.jpg" alt="" />
+          </div>
       </div>
-      <div class="box">
-        <img src="img/sewakamera.jpg" alt="" />
-      </div>
-      <div class="box">
-        <img src="img/simas.jpg" alt="" />
-      </div>
-      <div class="box">
-        <img src="img/e-perpus.jpg" alt="" />
-      </div>
-    </div>
 
+      =======
+    </div>
+    <div class="box">
+      <img src="img/sewakamera.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/simas.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/e-perpus.jpg" alt="" />
+    </div>
+    </div>
+    >>>>>>> f522a0672f649268970b37b4254c480443bc3967
   </section>
   <!-- end of portfolio -->
 
