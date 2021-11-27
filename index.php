@@ -79,12 +79,12 @@ $count = mysqli_num_rows($qry);
       <!-- counter -->
       <div class="counter">
         <div class="box">
-          <span>2+</span>
+          <span>1+</span>
           <h3>years experience</h3>
         </div>
 
         <div class="box">
-          <span><?= $count ?></span>
+          <span><?= $count ?>+</span>
           <h3>projects completed</h3>
         </div>
 
@@ -156,31 +156,23 @@ $count = mysqli_num_rows($qry);
     <div class="box-container">
       <div class="box">
         <img src="img/apotkkl.jpg" alt="" />
-        <<<<<<< HEAD </div>
-          <div class="box">
-            <img src="img/sewakamera.jpg" alt="" />
-          </div>
-          <div class="box">
-            <img src="img/simas.jpg" alt="" />
-          </div>
-          <div class="box">
-            <img src="img/e-perpus.jpg" alt="" />
-          </div>
       </div>
-
-      =======
+      <div class="box">
+        <img src="img/sewakamera.jpg" alt="" />
+      </div>
+      <div class="box">
+        <img src="img/simas.jpg" alt="" />
+      </div>
+      <div class="box">
+        <img src="img/e-perpus.jpg" alt="" />
+      </div>
     </div>
-    <div class="box">
-      <img src="img/sewakamera.jpg" alt="" />
+    <center>
+      <a target="_blank" href="http://dasepdepiyawan.epizy.com/allproject/Project" class="">
+        <button class="btn">VIEW ALL PROJECT</button>
+      </a>
+    </center>
     </div>
-    <div class="box">
-      <img src="img/simas.jpg" alt="" />
-    </div>
-    <div class="box">
-      <img src="img/e-perpus.jpg" alt="" />
-    </div>
-    </div>
-    >>>>>>> f522a0672f649268970b37b4254c480443bc3967
   </section>
   <!-- end of portfolio -->
 
